@@ -11,6 +11,9 @@ function App() {
   function decrement(){
     setCount(--count);
   }
+  function reset(){
+    setCount(0);
+  }
 
 
   return (
@@ -19,6 +22,7 @@ function App() {
         <button onClick={increment} className="text-4xl border px-4 py-2 rounded-2xl hover:bg-yellow-300 hover:text-purple-600 transtion-all duration-300">Increment</button>
         <p className="text-3xl">{count}</p>
         <button onClick={decrement} className="text-4xl border px-4 py-2 rounded-2xl hover:bg-yellow-300 hover:text-purple-600 transtion-all duration-300 ">Decrement</button>  
+        <p><button onClick={reset} className="border-2 border-white px-10 py-2 rounded-2xl mt-10 hover:bg-white hover:text-purple-600 transition-all duration-200">reset</button></p>
       </div>
     </div>
   );
